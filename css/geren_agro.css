@@ -1,0 +1,241 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #0056b3;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+/* Estilos del Encabezado */
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.container p {
+    font-size: 1.2rem;
+}
+
+/* Estilos para las Secciones */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Información de los Programas de Maestría */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Tabla de la Distribución por Cuatrimestre */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table td {
+    background-color: #f9f9f9;
+}
+
+/* Estilo de las secciones de Contacto */
+aside {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-item {
+    margin-bottom: 15px;
+}
+
+.contacto-item i {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.contacto-item p {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas como teléfonos (máximo 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.95rem; /* Ajuste el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .container h1 {
+        font-size: 1.8rem; /* Reduce el tamaño de la cabecera */
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .table th, .table td {
+        padding: 6px; /* Reducir el padding de la tabla */
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer-column {
+        width: 100%; /* Cada columna ocupa todo el ancho */
+    }
+}
+
+/* Para pantallas de tabletas (de 600px a 768px) */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1.1rem;
+    }
+
+    .table th, .table td {
+        padding: 8px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-column {
+        width: 45%; /* Columna más ancha en tablets */
+    }
+}
+
+/* Para pantallas medianas (de 768px a 1024px) como laptops pequeñas */
+@media (max-width: 1024px) {
+    .container h1 {
+        font-size: 2.2rem;
+    }
+
+    .container p {
+        font-size: 1.2rem;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 23%; /* Columna más pequeña en laptops */
+    }
+}
+
+/* Para pantallas grandes como computadoras de escritorio (más de 1024px) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px; /* Contenedor más grande en pantallas grandes */
+    }
+
+    .footer-links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        width: 18%; /* Las columnas tienen más espacio */
+    }
+}
+/* Tabla de la Distribución por Cuatrimestre */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo de los encabezados de la tabla */
+.table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top-left-radius: 8px;  /* Bordes redondeados en las esquinas superiores */
+    border-top-right-radius: 8px; /* Bordes redondeados en las esquinas superiores */
+}
+
+/* Estilo para las celdas de la tabla */
+.table td {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+/* Sombra y efecto al pasar el cursor por las filas */
+.table tbody tr:hover td {
+    background-color: #f1f1f1; /* Color de fondo al pasar el cursor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra cuando pasa el cursor */
+}
+
+/* Para pantallas pequeñas como teléfonos (máximo 600px) */
+@media (max-width: 600px) {
+    .table th, .table td {
+        padding: 6px; /* Reducir el padding de la tabla */
+    }
+}
+
+/* Para pantallas de tabletas (de 600px a 768px) */
+@media (max-width: 768px) {
+    .table th, .table td {
+        padding: 8px; /* Ajustar el padding para pantallas de tabletas */
+    }
+}
+
+/* Para pantallas medianas (de 768px a 1024px) como laptops pequeñas */
+@media (max-width: 1024px) {
+    .table th, .table td {
+        padding: 10px; /* Ajuste del padding para pantallas medianas */
+    }
+}

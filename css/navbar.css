@@ -1,0 +1,127 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Usamos la fuente de Google Fonts */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Encabezado */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuye espacio entre elementos */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo img {
+    width: auto;
+    height: 200px;
+}
+
+/* Íconos del Header */
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-left: 690px; /* Ajusta este valor según sea necesario */
+}
+
+.icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icons a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+/* Cintillo */
+.cintillo {
+    margin-left: -67    0px; /* Espacio entre los íconos y el cintillo */
+}
+
+.cintillo img {
+    width: 300px; /* Ancho del cintillo */
+    height: auto;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Hero */
+.hero {
+    background-color: white;
+    text-align: center;
+    padding: 3px 3px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.hero nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: flex-start; /* Alinea elementos a la izquierda */
+    }
+
+    .icons {
+        margin-top: 10px; /* Espacio entre el logo y los íconos */
+    }
+
+    .cintillo {
+        margin-left: 0; /* Quita el margen izquierdo en pantallas pequeñas */
+        margin-top: 10px; /* Espacio entre los íconos y el cintillo */
+    }
+
+    .cintillo img {
+        width: 100%; /* Hace que el cintillo ocupe todo el ancho */
+        height: auto;
+    }
+
+    .logo img {
+        height: 150px; /* Reduce el tamaño del logo en pantallas pequeñas */
+    }
+}

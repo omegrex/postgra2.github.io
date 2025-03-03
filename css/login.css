@@ -1,0 +1,447 @@
+/* Hero */
+.hero {
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.inicio-seccion {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.inicio-seccion h1 {
+    font-size: 28px;
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.inicio-seccion p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Menú Lateral Izquierdo */
+.menu-container-left {
+    width: 250px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #004080;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal con tres columnas */
+.descripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo de los menús laterales */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+}
+
+.menu-list li a {
+    display: block;
+    background-color: #004080;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-list li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 204, 0, 0.3);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.menu-list li a:hover::before {
+    left: 0;
+}
+
+.menu-list li a:hover {
+    background-color: #ffcc00;
+    color: #004080;
+    transform: scale(1.05);
+}
+
+/* Sección de inicio de sesión */
+.login-section {
+    width: 300px;
+    background-color: #f0f0f0;
+    border-left: 2px solid #004080;
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-section h2 {
+    font-size: 20px;
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.5);
+}
+
+.btn-login {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #ffcc00;
+    color: #004080;
+    transform: scale(1.05);
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: #004080;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: #ffcc00;
+}
+
+/* Estilo para el enlace de Telegram */
+.telegram-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.telegram-link a {
+    color: #0088cc; /* Color azul característico de Telegram */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.telegram-link a:hover {
+    color: #004080; /* Cambia el color al pasar el cursor */
+    transform: scale(1.05);
+}
+
+.telegram-link i {
+    font-size: 20px; /* Tamaño del ícono */
+}
+
+/* Sección de imagen centrada */
+.image-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Convocatoria */
+.convocatoria {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.convocatoria h2 {
+    font-size: 24px;
+    color: #004080;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.convocatoria h3 {
+    font-size: 20px;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.convocatoria h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.convocatoria p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.convocatoria ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.convocatoria ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Sección de cursos */
+.cursos {
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cursos h2 {
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.cursos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cursos ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+/* Estilos Globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hero */
+.hero {
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.inicio-seccion {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.inicio-seccion h1 {
+    font-size: 28px;
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.inicio-seccion p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Menú Lateral Izquierdo */
+.menu-container-left {
+    width: 250px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #004080;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor principal con tres columnas */
+.descripcion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    /* Cambios generales */
+    body {
+        padding: 10px;
+    }
+
+    /* Menú lateral izquierdo */
+    .menu-container-left {
+        width: 100%;
+        border-right: none;
+        box-shadow: none;
+        margin-bottom: 20px;
+    }
+
+    /* Contenido principal */
+    .content {
+        margin: 0;
+        padding: 15px;
+    }
+
+    /* Sección de descripción */
+    .descripcion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Login Section */
+    .login-section {
+        width: 100%;
+        border-left: none;
+        box-shadow: none;
+        margin-top: 20px;
+    }
+
+    /* Imagen centrada */
+    .image-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Convocatoria */
+    .convocatoria {
+        padding: 15px;
+    }
+
+    /* Ajustes de fuentes */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+}
